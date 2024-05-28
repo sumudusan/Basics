@@ -146,6 +146,63 @@ class A
 }
 */
 //---------------------------------------------------------------------
+//                         Factorial(kramaropitha)
+/*
+public class Main
+{
+   public static int factorial(int number)
+     {
+    if(number==0)
+    {
+        return 1;
+    }
+    else
+    {
+        return number*factorial(number-1);
+    }
+     }
+
+     public static void main(String [] args)
+     {
+         int result= factorial(5);
+         System.out.println(result);
+     }
+}
+ */
+//----------------------------------------------------------------------
+//                       Variable length
+//when we have lot of parameters for pass, we can use this method.
+  /*
+      public class Main
+{
+    public static void totalMarks(int... marks)
+    {
+        //1.print parameters as a list.
+
+        for (int i=0;i<marks.length;i++)
+        {
+            System.out.println(marks[i]);
+        }
+
+        //2.get the total of the parameters.
+
+        int totalmarks=0;
+        for(int i=0;i<marks.length;i++)
+        {
+            totalmarks+= marks[i];
+        }
+        System.out.println(totalmarks);
+    }
+
+    public static void main(String [] args)
+    {
+        totalMarks(10,20,30);
+    }
+}
+   */
+
+
+//---------------------------------------------------------------------
 //                        OOP METHODS
 //  1.Encapsulation
 /*
@@ -182,3 +239,37 @@ class A
  }
 }
 */
+//----------------------------------------------------------------
+//2. inheritance
+/*
+class A
+{
+    protected double bp,ht;
+
+    public A(double bp, double ht)
+    {
+        this.bp=bp;
+        this.ht=ht;
+    }
+}
+
+class B extends A
+{
+    private double sl;
+
+    public B(double bp,double ht, double sl)
+    {
+        super(bp,ht);
+        this.sl=sl;
+    }
+
+    public static void main(String args[])
+    {
+        B b=new  B(100,10,20);
+        System.out.println("bp="+b.bp);
+        System.out.println("ht="+b.ht);
+        System.out.println("sl="+b.sl);
+    }
+}
+*/
+
